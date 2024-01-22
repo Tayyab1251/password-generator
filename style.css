@@ -1,0 +1,94 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #207092;
+    font-family: sans-serif;
+}
+
+/* Main container */
+.main {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+@media (min-width: 768px) { 
+    .main {
+        padding: 4rem;
+    }
+}#appSection{
+    border-radius: 5px;
+    
+    background-color: #1f0c35;
+}
+/* Headings */
+.appName {
+    font-size: 2rem;
+    color: azure;
+    margin-bottom: 1rem;
+}
+
+.gen {
+    color: azure;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Input field */
+#passwordBox {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#generateBtn, #copyBtn {
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: azure;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #5df992;
+    cursor: pointer;
+}
+
+#copyBtn.copied {
+    background-color: #77f9b2;
+}
+
+@media (min-width: 768px) {
+    #generateBtn, #copyBtn {
+        width: 45%;
+    }
+}
+
+/* Hover effects */
+#copyBtn:hover, #generateBtn:hover {
+    background-color: #14b65a;
+}
+#generateBtn{
+    margin-right: 5px;
+}
